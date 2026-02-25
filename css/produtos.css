@@ -1,77 +1,74 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
-body{
+/* ================= BASE ================= */
+body {
     background-color: #f8f1e7;
+    font-family: 'Times New Roman', Times, serif;
 }
-    
 
-.logo-area{
+/* ================= HEADER / LOGO ================= */
+
+
+.logo-area {
     display: flex;
     align-items: center;
     gap: 15px;
-    
+    flex-wrap: wrap;
 }
 
-.logo{
+.logo {
     width: 200px;
     height: auto;
-    
 }
 
-.texto-logo h1{
+.texto-logo h1 {
     font-family: "Lobster", sans-serif;
     font-size: 42px;
     font-weight: 700;
     color: rgb(90, 55, 8);
-    
-    
 }
 
-.texto-logo p{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px ;
-    
+.texto-logo p {
+    font-size: 15px;
 }
 
-footer{
-    background-color:rgb(90, 55, 8) ;
-    color:#fff;
-    padding:15px 0;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 40px;
-}
-/* -------------------------------------NAVEGAÇÃO MENU ------------------------------------------ */
-
-/* POSIÇÃO DA NAVEGAÇÃO */
+/* ================= NAVEGAÇÃO ================= */
 .navegacao {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     gap: 30px;
     padding: 15px 40px;
     background-color: rgb(90, 55, 8);
+    flex-wrap: wrap;
 }
 
 .navegacao a {
     text-decoration: none;
     font-weight: bold;
-    color: #fff;
     font-size: 12px;
-    transition: 0.3s;
+    color: #fff;
     padding: 10px 0;
     border-bottom: 2px solid transparent;
+    transition: 0.3s;
 }
 
 .navegacao a:hover {
     color: rgb(255, 157, 30);
     transform: scale(1.05);
-    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px; */
 }
-
+/* RODAPÉ */
+footer {
+    background-color: rgb(90, 55, 8);
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+}
 /* TABELA POR INTEIRO */
 .tabela-produtos{
     width: 90%;
@@ -116,3 +113,45 @@ h2 {
 }
 
 
+/* CELULAR */
+@media (max-width: 600px) {
+
+    header {
+        text-align: center;
+    }
+
+    .logo-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .texto-logo h1 {
+        font-size: 30px;
+    }
+
+    .texto-logo p {
+        font-size: 14px;
+    }
+
+    .navegacao {
+        justify-content: center;
+        padding: 15px;
+        gap: 20px;
+    }
+}
+
+/* 📲 TABLET */
+@media (max-width: 900px) {
+
+    .texto-logo h1 {
+        font-size: 36px;
+    }
+
+    .video {
+        width: 90%;
+    }
+}
