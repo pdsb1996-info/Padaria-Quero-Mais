@@ -107,7 +107,9 @@ footer {
 }
 
 h2 {
-    padding: 12px;
+    color: rgb(90, 55, 8);
+    padding: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    
     
 }

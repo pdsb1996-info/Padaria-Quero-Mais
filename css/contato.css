@@ -12,8 +12,6 @@ body {
 }
 
 /* ================= HEADER / LOGO ================= */
-
-
 .logo-area {
     display: flex;
     align-items: center;
@@ -62,12 +60,93 @@ body {
     transform: scale(1.05);
 }
 
-/* ================= VÍDEO ================= */
-.video {
+/* ================= CAIXA DE CONTATO ================= */
+h2 {
+   
+    text-align: center;
+    color: rgb(90, 55, 8);
+    padding: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+/* PADRÃO DE TEXTO DA CAIXA */
+.caixa-contato {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #000;
+
+    padding: 40px;
+    border: solid #d6c3a3;
+    border-radius: 15px;
     width: 100%;
-    max-width: 800px;
-    margin: 30px auto;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.15);
+    margin: 50px auto;
+}
+
+.caixa-contato fieldset {
+    border: none;
+}
+
+.caixa-contato legend {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.caixa-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.caixa-contato label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.caixa-contato input,
+.caixa-contato textarea,
+.caixa-contato select,
+.caixa-contato button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.caixa-contato input,
+.caixa-contato textarea,
+.caixa-contato select {
     display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #d6c3a3;
+    border-radius: 5px;
+    outline: none;
+}
+
+.caixa-contato input:focus,
+.caixa-contato textarea:focus,
+.caixa-contato select:focus {
+    border-color: #ffcc00;
+}
+
+.caixa-contato button {
+    background-color: #ffffff;
+    color: #333;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.caixa-contato button:hover {
+    background-color: #d6c3a3;
 }
 
 /* ================= RODAPÉ ================= */
@@ -80,9 +159,7 @@ footer {
     margin-top: 40px;
 }
 
-/* =================================================
-   RESPONSIVIDADE
-   ================================================= */
+/* ================= RESPONSIVIDADE ================= */
 
 /* 📱 CELULAR */
 @media (max-width: 600px) {
@@ -114,9 +191,8 @@ footer {
         gap: 20px;
     }
 
-    .video {
-        width: 100%;
-        margin: 20px auto;
+    .caixa-contato {
+        padding: 20px;
     }
 }
 
@@ -125,9 +201,5 @@ footer {
 
     .texto-logo h1 {
         font-size: 36px;
-    }
-
-    .video {
-        width: 90%;
     }
 }
