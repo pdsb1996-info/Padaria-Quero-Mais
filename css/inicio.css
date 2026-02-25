@@ -1,0 +1,168 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    background-color: #f8f1e7;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* LOGO */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.texto-logo h1 {
+    font-family: "Lobster", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: rgb(90, 55, 8);
+}
+
+.texto-logo p {
+    font-size: 15px;
+}
+
+/* CONTEÚDO */
+.sobre {
+    padding: 15px;
+    text-align: justify;
+}
+
+h2, h3 {
+    padding: 15px;
+}
+
+/* GALERIA */
+.container-imagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 15px;
+}
+
+.container-imagens img {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgb(90, 55, 8);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+                rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-imagens img:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+}
+
+/* VÍDEO */
+.video {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+    padding: 20 px 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 20px;
+
+}
+
+
+/* NAVEGAÇÃO */
+.navegacao {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 15px 40px;
+    background-color: rgb(90, 55, 8);
+    flex-wrap: wrap;
+}
+
+.navegacao a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.navegacao a:hover {
+    color: rgb(255, 157, 30);
+    transform: scale(1.05);
+}
+
+/* RODAPÉ */
+footer {
+    background-color: rgb(90, 55, 8);
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* ================= RESPONSIVO ================= */
+
+/* CELULAR */
+@media (max-width: 600px) {
+
+    header {
+        text-align: center;
+    }
+
+    .logo-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .texto-logo h1 {
+        font-size: 30px;
+    }
+
+    .texto-logo p {
+        font-size: 14px;
+    }
+
+    .navegacao {
+        justify-content: center;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .video {
+        width: 60%;
+        
+    }
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+
+    .texto-logo h1 {
+        font-size: 36px;
+    }
+
+    .video {
+        width: 90%;
+    }
+}

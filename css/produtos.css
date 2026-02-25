@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: #f8f1e7;
+}
+    
+
+.logo-area{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+    
+}
+
+.texto-logo h1{
+    font-family: "Lobster", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: rgb(90, 55, 8);
+    
+    
+}
+
+.texto-logo p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px ;
+    
+}
+
+footer{
+    background-color:rgb(90, 55, 8) ;
+    color:#fff;
+    padding:15px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+}
+/* -------------------------------------NAVEGAÇÃO MENU ------------------------------------------ */
+
+/* POSIÇÃO DA NAVEGAÇÃO */
+.navegacao {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    padding: 15px 40px;
+    background-color: rgb(90, 55, 8);
+}
+
+.navegacao a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    transition: 0.3s;
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.navegacao a:hover {
+    color: rgb(255, 157, 30);
+    transform: scale(1.05);
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px; */
+}
+
+/* TABELA POR INTEIRO */
+.tabela-produtos{
+    width: 90%;
+    /* centralizar a tabela margin:auto */
+    margin: auto; 
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.15);
+    
+}
+/* CABEÇALHO DA TABELA */
+.tabela-produtos thead{
+
+    background-color: rgb(90, 55, 8);
+    color: #fff;
+
+}
+
+/* ESTILO DO TEXTO */
+.tabela-produtos th{
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+
+}
+
+/* CORPO DA TABELA */
+.tabela-produtos td{
+
+    padding: 10px;
+    border-bottom: 3px  solid #d6c3a3;
+    font-size: 15px;
+}
+
+h2 {
+    padding: 12px;
+   
+    
+}
+
+

@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f1e7;
+}
+
+.container-imagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.container-imagens img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+                rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border: 2px solid rgb(90, 55, 8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-imagens img:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.texto-logo h1 {
+    position: relative;
+    z-index: 10;
+    font-family: "Lobster", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: rgb(90, 55, 8);
+}
+
+.texto-logo p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    /* text-align: justify; */
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+    background-color: rgb(90, 55, 8);
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* ------------------ NAVEGAÇÃO ------------------ */
+
+.navegacao {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    padding: 15px 40px;
+    background-color: rgb(90, 55, 8);
+}
+
+.navegacao a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    transition: 0.3s;
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.navegacao a:hover {
+    color: rgb(255, 157, 30);
+    transform: scale(1.05);
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px; */
+}
