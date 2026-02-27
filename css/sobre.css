@@ -61,13 +61,9 @@ body {
     transform: scale(1.05);
 }
 
-table{
-    border: solid black;
-    border-radius: 10px 10px;
-    padding: 15px;
-}
 
-h2{
+
+h2 {
     padding: 15px;
 }
 
@@ -76,58 +72,134 @@ h2{
 
 /* -----------FOOTER ------------------------ */
 
-footer{
-    background-color:rgb(90, 55, 8) ;
-    color:#fff;
-    padding:15px 0;
+footer {
+    background-color: rgb(90, 55, 8);
+    color: #fff;
+    padding: 15px 0;
     text-align: center;
     font-size: 14px;
     margin-top: 40px;
 }
 
+.contato {
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    padding: 15px;
+}
 
-.localizacao{
-    left: 0;
+.funcionamento {
+    text-align: center;
+    color: rgb(90, 55, 8);
+    padding: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+}
+
+.tabela {
+
+    width: 90%;
+    border-collapse: collapse;
+
+    /* centralizar a tabela margin:auto */
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.tabela thead {
+    
+    text-align: center;
+
+}
+
+.tabela th {
+    background-color: rgb(90, 55, 8);
+    padding: 12px 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.tabela td {
+    padding: 12px 30px;
+    text-align: center;
+    border-bottom: 3px solid #d6c3a3;
+    font-size: 15px;
+
+}
+
+
+.localizacao {
+
     justify-content: center;
     margin-top: 20px;
 }
+
 .mapa {
-    position: sticky;
-    height: 250px;
-    width: 350px;
-    padding: 40px;
-    display: flex;
+    width: 60%;
+    margin: 40px auto;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    max-width: 800px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+
 }
-.desenvolvido{
+
+.desenvolvido {
     text-align: center;
     margin-top: 20px;
-    position:relative;
-}
-.localTexto{
-    text-align:left;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
-
-    
+    position: relative;
 }
 
-.redes-sociais{
-    justify-content: end;
+.localTexto {
+
+    color: rgb(90, 55, 8);
+    padding: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    text-align: center;
+
+
 }
 
-.redes-sociais a{
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px; /* Distância do fundo */
+    right: 40px;  /* Distância da direita */
+    background-color: #25d366;
     color: #fff;
-    margin:0 12px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Garante que fique na frente de tudo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-    font-size: 20px;
-  
+    transition: transform 0.3s ease; /* Efeito ao passar o mouse */
 }
-.redes-sociais a:hover{
-    color:rgb(255, 157, 30);
+
+.whatsapp-link img {
+    width: 35px;
+    height: 35px;
 }
+
+/* Efeito de aumentar levemente ao passar o mouse */
+.whatsapp-link:hover {
+    transform: scale(1.1);
+    background-color: #20ba5a;
+}
+
 
 
 
@@ -162,10 +234,10 @@ footer{
         gap: 20px;
     }
 
-    
-    }
 
-    /* 📲 TABLET */
+}
+
+/* 📲 TABLET */
 @media (max-width: 900px) {
 
     .texto-logo h1 {
